@@ -1,0 +1,243 @@
+
+1. Palindrome or not:-
+package firstprog;
+
+public class Task9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	    String str = "madam", reverseStr = "";
+	    
+	    int strLength = str.length();
+
+	    for (int i = (strLength - 1); i >=0; --i) {
+	      reverseStr = reverseStr + str.charAt(i);
+	    }
+
+	    if (str.toLowerCase().equals(reverseStr.toLowerCase())) {
+	      System.out.println(str + " is a Palindrome String.");
+	    }
+	    else {
+	      System.out.println(str + " is not a Palindrome String.");
+	    }
+	}
+2Reverse String:
+       package firstprog;
+
+public class Task9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 String input = "Welcome to guvi";
+		 
+	       
+	        byte[] strAsByteArray = input.getBytes();
+	 
+	        byte[] result = new byte[strAsByteArray.length];
+	 
+	       
+	        for (int i = 0; i < strAsByteArray.length; i++)
+	            result[i] = strAsByteArray[strAsByteArray.length - i - 1];
+	 
+	        System.out.println(new String(result));
+	}
+	}
+
+}
+3.pattern:-
+     ackage firstprog;
+
+public class Task9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i, j, c, N;
+
+		N = 4;
+		c = 1;
+		for (i = 1; i <= N; i++)
+		{
+			for (j = 1; j <= i; j++)
+			{
+				System.out.print(c + "  ");
+				c++;
+			}
+			System.out.println("");
+	}
+	}
+}
+4Pattern:-
+
+package firstprog;
+import java.util.Scanner;
+public class Task9 {
+
+	public static void main(String[] args) {
+		int i, j, k, my_input;
+	    
+	      Scanner my_scanner = new Scanner(System.in);
+	     
+	      System.out.print("Enter the number : ");
+	      my_input = my_scanner.nextInt();
+	     
+	      k=my_input*2-1;
+	      for( i=1;i<=k;i++){
+	         for( j=1;j<=k;j++){
+	            if(j==i || j==k-i+1)
+	               System.out.print("X");
+	               System.out.print(" ");
+	         }
+	         System.out.println();
+	}
+	}
+}
+5.Anna University Grading:-
+
+package firstprog;
+
+public class Task9 {
+
+	public static void main(String[] args) {
+		 int marks[] = { 25, 65, 46, 98, 78, 65 };
+		 
+	       
+	        int max_marks = marks.length * 100;
+	 
+	        
+	        int total = 0;
+	 
+	      
+	        char grade = 'F';
+	 
+	    
+	        for (int i = 0; i < marks.length; i++) {
+	            total += marks[i];
+	        }
+	 
+	      
+	        double percentage
+	            = ((double)(total) / max_marks) * 100;
+	 
+	      
+	        if (percentage >= 90) {
+	            grade = 'A';
+	        }
+	        else {
+	            if (percentage >= 80 && percentage <= 89) {
+	                grade = 'B';
+	            }
+	            else {
+	                if (percentage >= 60 && percentage <= 79) {
+	                    grade = 'C';
+	                }
+	                else {
+	                    if (percentage >= 33 && percentage <= 59) {
+	                        grade = 'D';
+	                    }
+	                    else {
+	                        grade = 'F';
+	                    }
+	                }
+	            }
+	        }
+	 
+	        System.out.println(grade);
+	    }
+	}
+6.Hotel traiff:
+package firstprog;
+
+public class Task9 {
+
+	public static void main(String[] args) {
+	
+		  int month = 2,n = 3;
+		  float  rent = 1500,t=0;
+		double r=0;
+		   t=rent*n;
+		 
+		  r=((rent+(rent*0.2))*n);
+		  
+		  switch(month)
+		  {
+		    case 1:
+		      p(t);
+		      break;
+		    case 2:
+		      p(t);
+		      break;
+		    case 3:
+		      p(t);
+		      break;
+		    case 4:
+		      p(r);
+		      break;
+		    case 5:
+		      p(r);
+		      break;
+		    case 6:
+		      p(r);
+		      break;
+		    case 7:
+		      p(t);
+		      break;
+		    case 8:
+		      p(t);
+		      break;
+		    case 9:
+		      p(t);
+		      break;
+		    case 10:
+		      p(t);
+		      break;
+		    case 11:
+		      p(r);
+		      break;
+		    case 12:
+		      p(r);
+		      break;
+		    
+		     
+		    default: 
+		    	System.out.println ("Invalid Input");
+		    break;
+		  }
+		  return ;
+		}
+		  private static void p(double r) {
+		// TODO Auto-generated method stub
+		
+	}
+		static void p(float t)
+		  {
+		   System.out.println ();
+		  }
+	    }
+	
+
+7.largest amoung 3 numbers:-
+
+package firstprog;
+import java.util.Scanner;  
+
+public class Task9 {
+
+	public static void main(String[] args) {
+		int a, b, c, largest;  
+		
+		Scanner sc = new Scanner(System.in);  
+		
+		System.out.println("Enter the first number:");  
+		a = sc.nextInt();  
+		System.out.println("Enter the second number:");  
+		b = sc.nextInt();  
+		System.out.println("Enter the third number:");  
+		c = sc.nextInt();  
+		largest = c > (a > b ? a : b) ? c : ((a > b) ? a : b);  
+		System.out.println("The largest number is: "+largest);  
+		  }
+	    }
+
+        
